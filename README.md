@@ -94,11 +94,17 @@ Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google
 
 ### bert-japanese-aozora6m3m-unidic32k-2m
 
-|[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX| |[雪國](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/yukiguni-benchmark.tar.gz)|LAS|MLAS|BLEX|
-|---------------|-----|-----|-----| |---------------|-----|-----|-----|
-|UniDic="qkana" |75.47|64.29|71.43| |UniDic="qkana" |85.71|78.43|74.51|
-|UniDic="kindai"|75.47|64.29|71.43| |UniDic="kindai"|81.92|74.51|70.59|
-|UniDic="kinsei"|66.67|55.17|58.62| |UniDic="kinsei"|85.71|78.43|70.59|
+|[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |75.47|64.29|71.43|
+|UniDic="kindai"|75.47|64.29|71.43|
+|UniDic="kinsei"|66.67|55.17|58.62|
+
+|[雪國](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/yukiguni-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |85.71|78.43|74.51|
+|UniDic="kindai"|81.92|74.51|70.59|
+|UniDic="kinsei"|85.71|78.43|70.59|
 
 |[荒野より](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/koyayori-benchmark.tar.gz)|LAS|MLAS|BLEX|
 |---------------|-----|-----|-----|
