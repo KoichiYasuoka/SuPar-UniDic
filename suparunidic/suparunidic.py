@@ -28,7 +28,6 @@ class SuParAPI(object):
     self.supar=Parser.load(os.path.join(model,model+".supar"))
     os.chdir(t)
   def __call__(self,conllu):
-    print(conllu)
     c=conllu.split("\n")
     u=[]
     e=""
