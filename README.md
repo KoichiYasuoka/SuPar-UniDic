@@ -71,6 +71,7 @@ Available `BERT` options are:
 * `BERT="bert-japanese-aozora6m3m-unidic32k-2m"` from [bert-japanese-aozora](https://github.com/akirakubo/bert-japanese-aozora) (default)
 * `BERT="nict-bert-base-japanese-100k"` from [NICT BERT 日本語 Pre-trained モデル](https://alaginrc.nict.go.jp/nict-bert/)
 * `BERT="unihanlm-base"` from [microsoft/unihanlm-base](https://huggingface.co/microsoft/unihanlm-base)
+* `BERT="bert-base-japanese-whole-word-masking"` from [cl-tohoku](https://huggingface.co/cl-tohoku) ([fugashi](https://pypi.org/project/fugashi/) and [ipadic](https://pypi.org/project/ipadic/) required)
 
 ## Installation for Linux
 
@@ -151,6 +152,26 @@ Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google
 |UniDic="qkana" |61.78|38.96|41.56|
 |UniDic="kindai"|61.78|36.36|38.96|
 |UniDic="kinsei"|60.42|36.36|38.96|
+
+### bert-base-japanese-whole-word-masking
+
+|[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |79.25|71.43|78.57|
+|UniDic="kindai"|79.25|71.43|78.57|
+|UniDic="kinsei"|70.37|62.07|65.52|
+
+|[雪國](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/yukiguni-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |85.71|78.43|74.51|
+|UniDic="kindai"|81.42|74.51|70.59|
+|UniDic="kinsei"|85.71|78.43|70.59|
+
+|[荒野より](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/koyayori-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |73.30|56.00|56.00|
+|UniDic="kindai"|73.30|53.33|53.33|
+|UniDic="kinsei"|70.83|50.67|50.67|
 
 ## Author
 
