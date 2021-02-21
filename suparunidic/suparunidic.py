@@ -28,6 +28,7 @@ class SuParAPI(object):
     self.supar=Parser.load(os.path.join(model,model+".supar"))
     os.chdir(t)
   def __call__(self,conllu):
+    print(conllu)
     c=conllu.split("\n")
     u=[]
     e=""
@@ -51,8 +52,8 @@ class SuParAPI(object):
         j=0
       else:
         t=s.split("\t")
-        head=str(d.sentences[0].values[6][j])
-        deprel=d.sentences[0].values[7][j]
+        head=str(d.sentences[i].values[6][j])
+        deprel=d.sentences[i].values[7][j]
         if deprel=="root":
           if head!="0":
             deprel="advcl" if int(head)>int(t[0]) else "parataxis"
