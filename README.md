@@ -118,7 +118,7 @@ Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google
 |---------------|-----|-----|-----|
 |UniDic="qkana" |67.92|52.63|59.65|
 |UniDic="kindai"|67.92|52.63|59.65|
-|UniDic="kinsei"|66.67|55.17|58.62|
+|UniDic="kinsei"|59.26|44.07|47.46|
 
 |[雪國](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/yukiguni-benchmark.tar.gz)|LAS|MLAS|BLEX|
 |---------------|-----|-----|-----|
