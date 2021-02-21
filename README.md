@@ -40,6 +40,7 @@ Tokenizer, POS-tagger, lemmatizer, and dependency-parser for modern and contempo
 に   ADP   <╝ ║     ║ ║ case(格表示)
 渡し VERB  ═╗═╝═════╝═╝ ROOT(親)
 た   AUX   <╝           aux(動詞補助成分)
+
 >>> from deplacy.deprelja import deprelja
 >>> for b in spacy_syncha.bunsetu_spans(doc):
 ...   for t in b.lefts:
@@ -54,16 +55,16 @@ Tokenizer, POS-tagger, lemmatizer, and dependency-parser for modern and contempo
 
 `suparunidic.load(UniDic,BERT)` loads a natural language processor pipeline, which uses `UniDic` for tokenizer POS-tagger and lemmatizer, then uses `BERT` for Biaffine dependency-parser of [SuPar](https://pypi.org/project/supar/). Available `UniDic` options are:
 
-* `UniDic="gendai"`: Use [現代書き言葉UniDic](https://unidic.ninjal.ac.jp/download#unidic_bccwj).
-* `UniDic="spoken"`: Use [現代話し言葉UniDic](https://unidic.ninjal.ac.jp/download#unidic_csj).
-* `UniDic="qkana"`: Use [旧仮名口語UniDic](https://unidic.ninjal.ac.jp/download_all#unidic_qkana).
-* `UniDic="kindai"`: Use [近代文語UniDic](https://unidic.ninjal.ac.jp/download_all#unidic_kindai).
-* `UniDic="kinsei"`: Use [近世口語（洒落本）UniDic](https://unidic.ninjal.ac.jp/download_all#unidic_kinsei).
-* `UniDic="kyogen"`: Use [中世口語（狂言）UniDic](https://unidic.ninjal.ac.jp/download_all#unidic_kyogen).
-* `UniDic="wakan"`: Use [中世文語（説話・随筆）UniDic](https://unidic.ninjal.ac.jp/download_all#unidic_wakan).
-* `UniDic="wabun"`: Use [中古和文UniDic](https://unidic.ninjal.ac.jp/download_all#unidic_wabun).
-* `UniDic="manyo"`: Use [上代（万葉集）UniDic](https://unidic.ninjal.ac.jp/download_all#unidic_manyo).
-* `UniDic=None`: Use [unidic-lite](https://github.com/polm/unidic-lite) (default).
+* `UniDic="gendai"` [現代書き言葉UniDic](https://unidic.ninjal.ac.jp/download#unidic_bccwj)
+* `UniDic="spoken"` [現代話し言葉UniDic](https://unidic.ninjal.ac.jp/download#unidic_csj)
+* `UniDic="qkana"` [旧仮名口語UniDic](https://unidic.ninjal.ac.jp/download_all#unidic_qkana)
+* `UniDic="kindai"` [近代文語UniDic](https://unidic.ninjal.ac.jp/download_all#unidic_kindai)
+* `UniDic="kinsei"` [近世口語（洒落本）UniDic](https://unidic.ninjal.ac.jp/download_all#unidic_kinsei)
+* `UniDic="kyogen"` [中世口語（狂言）UniDic](https://unidic.ninjal.ac.jp/download_all#unidic_kyogen)
+* `UniDic="wakan"` [中世文語（説話・随筆）UniDic](https://unidic.ninjal.ac.jp/download_all#unidic_wakan)
+* `UniDic="wabun"` [中古和文UniDic](https://unidic.ninjal.ac.jp/download_all#unidic_wabun)
+* `UniDic="manyo"` [上代（万葉集）UniDic](https://unidic.ninjal.ac.jp/download_all#unidic_manyo)
+* `UniDic=None` [unidic-lite](https://github.com/polm/unidic-lite) (default)
 
 Available `BERT` options are:
 
@@ -86,6 +87,30 @@ Make sure to get `python37-devel` `python37-pip` `python37-cython` `python37-num
 curl -L https://raw.githubusercontent.com/KoichiYasuoka/CygTorch/master/installer/supar.sh | sh
 pip3.7 install suparunidic
 ```
+
+## Benchmarks
+
+Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google.com/github/KoichiYasuoka/SuPar-UniDic/blob/main/benchmark.ipynb)
+
+### bert-japanese-aozora6m3m-unidic32k-2m
+
+|[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="kindai"|75.47|64.29|71.43|
+|UniDic="qkana" |75.47|64.29|71.43|
+|UniDic="kinsei"|66.67|55.17|58.62|
+
+|[雪國](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/yukiguni-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |85.71|78.43|74.51|
+|UniDic="kinsei"|85.71|78.43|70.59|
+|UniDic="kindai"|81.92|74.51|70.59|
+
+|[荒野より](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/koyayori-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |76.44|58.67|58.67|
+|UniDic="kindai"|76.44|56.00|56.00|
+|UniDic="kinsei"|72.92|53.33|53.33|
 
 ## Author
 
