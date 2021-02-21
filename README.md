@@ -9,7 +9,7 @@ Tokenizer, POS-tagger, lemmatizer, and dependency-parser for modern and contempo
 ```py
 >>> import suparunidic
 >>> nlp=suparunidic.load()
->>> doc=qkana("太郎は花子が読んでいる本を次郎に渡した")
+>>> doc=nlp("太郎は花子が読んでいる本を次郎に渡した")
 >>> print(suparunidic.to_conllu(doc))
 1	太郎	タロウ	PROPN	名詞-固有名詞-人名-名	_	12	nsubj	_	SpaceAfter=No|Translit=タロー
 2	は	は	ADP	助詞-係助詞	_	1	case	_	SpaceAfter=No|Translit=ワ
@@ -96,60 +96,60 @@ Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google
 
 |[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
 |---------------|-----|-----|-----|
-|UniDic="kindai"|75.47|64.29|71.43|
 |UniDic="qkana" |75.47|64.29|71.43|
+|UniDic="kindai"|75.47|64.29|71.43|
 |UniDic="kinsei"|66.67|55.17|58.62|
 
 |[雪國](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/yukiguni-benchmark.tar.gz)|LAS|MLAS|BLEX|
 |---------------|-----|-----|-----|
-|UniDic="kindai"|81.92|74.51|70.59|
 |UniDic="qkana" |85.71|78.43|74.51|
+|UniDic="kindai"|81.92|74.51|70.59|
 |UniDic="kinsei"|85.71|78.43|70.59|
 
 |[荒野より](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/koyayori-benchmark.tar.gz)|LAS|MLAS|BLEX|
 |---------------|-----|-----|-----|
-|UniDic="kindai"|76.44|56.00|56.00|
 |UniDic="qkana" |76.44|58.67|58.67|
+|UniDic="kindai"|76.44|56.00|56.00|
 |UniDic="kinsei"|72.92|53.33|53.33|
 
 ### nict-bert-base-japanese-100k
 
 |[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
 |---------------|-----|-----|-----|
-|UniDic="kindai"|67.92|52.63|59.65|
 |UniDic="qkana" |67.92|52.63|59.65|
+|UniDic="kindai"|67.92|52.63|59.65|
 |UniDic="kinsei"|66.67|55.17|58.62|
 
 |[雪國](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/yukiguni-benchmark.tar.gz)|LAS|MLAS|BLEX|
 |---------------|-----|-----|-----|
-|UniDic="kindai"|81.42|74.51|74.51|
 |UniDic="qkana" |82.14|74.51|74.51|
+|UniDic="kindai"|81.42|74.51|74.51|
 |UniDic="kinsei"|82.14|74.51|70.59|
 
 |[荒野より](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/koyayori-benchmark.tar.gz)|LAS|MLAS|BLEX|
 |---------------|-----|-----|-----|
-|UniDic="kindai"|73.30|48.65|48.65|
 |UniDic="qkana" |73.30|51.35|51.35|
+|UniDic="kindai"|73.30|48.65|48.65|
 |UniDic="kinsei"|71.88|50.67|50.67|
 
 ### unihanlm-base
 
 |[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
 |---------------|-----|-----|-----|
-|UniDic="kindai"|69.81|56.14|63.16|
 |UniDic="qkana" |69.81|56.14|63.16|
+|UniDic="kindai"|69.81|56.14|63.16|
 |UniDic="kinsei"|61.11|47.46|50.85|
 
 |[雪國](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/yukiguni-benchmark.tar.gz)|LAS|MLAS|BLEX|
 |---------------|-----|-----|-----|
-|UniDic="kindai"|79.65|70.59|70.59|
 |UniDic="qkana" |85.71|78.43|78.43|
+|UniDic="kindai"|79.65|70.59|70.59|
 |UniDic="kinsei"|85.71|78.43|74.51|
 
 |[荒野より](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/koyayori-benchmark.tar.gz)|LAS|MLAS|BLEX|
 |---------------|-----|-----|-----|
-|UniDic="kindai"|61.78|36.36|38.96|
 |UniDic="qkana" |61.78|38.96|41.56|
+|UniDic="kindai"|61.78|36.36|38.96|
 |UniDic="kinsei"|60.42|36.36|38.96|
 
 ## Author
