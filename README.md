@@ -10,6 +10,8 @@ Tokenizer, POS-tagger, lemmatizer, and dependency-parser for modern and contempo
 >>> import suparunidic
 >>> nlp=suparunidic.load()
 >>> doc=nlp("太郎は花子が読んでいる本を次郎に渡した")
+>>> print(type(doc))
+<class 'spacy.tokens.doc.Doc'>
 >>> print(suparunidic.to_conllu(doc))
 1	太郎	タロウ	PROPN	名詞-固有名詞-人名-名	_	12	nsubj	_	SpaceAfter=No|Translit=タロー
 2	は	は	ADP	助詞-係助詞	_	1	case	_	SpaceAfter=No|Translit=ワ
@@ -40,7 +42,6 @@ Tokenizer, POS-tagger, lemmatizer, and dependency-parser for modern and contempo
 に   ADP   <╝ ║     ║ ║ case(格表示)
 渡し VERB  ═╗═╝═════╝═╝ ROOT(親)
 た   AUX   <╝           aux(動詞補助成分)
-
 >>> from deplacy.deprelja import deprelja
 >>> for b in suparunidic.bunsetu_spans(doc):
 ...   for t in b.lefts:
