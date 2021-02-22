@@ -31,16 +31,20 @@ class SuParAPI(object):
     c=conllu.split("\n")
     u=[]
     e=""
+    p=""
     for s in c:
       if s.startswith("#"):
         continue
       if s=="":
         if e!="":
+          if p not in ["PUNCT","SYM"]:
+            e+="。"
           u.append(e.strip().split())
           e=""
       else:
         t=s.split("\t")
         e+=t[1]+" "
+        p=t[3]
     d=self.supar.predict(u)
     i=j=0
     for k,s in enumerate(c):
