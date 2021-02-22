@@ -71,6 +71,7 @@ Available `BERT` options are:
 * `BERT="bert-japanese-aozora6m3m-unidic32k-2m"` from [bert-japanese-aozora](https://github.com/akirakubo/bert-japanese-aozora) (default)
 * `BERT="bert-base-japanese-whole-word-masking"` from [cl-tohoku](https://huggingface.co/cl-tohoku) ([fugashi](https://pypi.org/project/fugashi/), [ipadic](https://pypi.org/project/ipadic/) and [SentencePiece](https://pypi.org/project/sentencepiece/) required)
 * `BERT="nict-bert-base-japanese-100k"` from [NICT BERT 日本語 Pre-trained モデル](https://alaginrc.nict.go.jp/nict-bert/)
+* `BERT="laboro-bert-japanese-large"` from [Laboro-BERT-Japanese](https://github.com/laboroai/Laboro-BERT-Japanese)
 * `BERT="unihanlm-base"` from [microsoft/unihanlm-base](https://huggingface.co/microsoft/unihanlm-base)
 * `BERT="distilbert-base-japanese"` from [bandainamco-mirai](https://huggingface.co/bandainamco-mirai) ([SentencePiece](https://pypi.org/project/sentencepiece/) required)
 
@@ -153,6 +154,26 @@ Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google
 |UniDic="qkana" |73.30|51.35|51.35|
 |UniDic="kindai"|73.30|48.65|48.65|
 |UniDic="kinsei"|71.88|50.67|50.67|
+
+### laboro-bert-japanese-large
+
+|[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |71.70|59.65|66.67|
+|UniDic="kindai"|71.70|59.65|66.67|
+|UniDic="kinsei"|62.96|50.85|54.24|
+
+|[雪國](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/yukiguni-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |75.00|73.08|69.23|
+|UniDic="kindai"|70.80|69.23|65.38|
+|UniDic="kinsei"|75.00|73.08|65.38|
+
+|[荒野より](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/koyayori-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |65.97|39.47|39.47|
+|UniDic="kindai"|65.97|36.84|36.84|
+|UniDic="kinsei"|63.54|34.21|34.21|
 
 ### unihanlm-base
 
