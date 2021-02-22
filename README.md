@@ -97,7 +97,7 @@ pip3.7 install suparunidic --no-build-isolation
 
 Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google.com/github/KoichiYasuoka/SuPar-UniDic/blob/main/benchmark.ipynb)
 
-### bert-japanese-aozora6m3m-unidic32k-2m
+### BERT="bert-japanese-aozora6m3m-unidic32k-2m"
 
 |[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
 |---------------|-----|-----|-----|
@@ -117,7 +117,7 @@ Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google
 |UniDic="kindai"|76.44|56.00|56.00|
 |UniDic="kinsei"|72.92|53.33|53.33|
 
-### bert-base-japanese-whole-word-masking
+### BERT="bert-base-japanese-whole-word-masking"
 
 |[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
 |---------------|-----|-----|-----|
@@ -137,7 +137,7 @@ Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google
 |UniDic="kindai"|73.30|53.33|53.33|
 |UniDic="kinsei"|70.83|50.67|50.67|
 
-### bert-base-japanese-char
+### BERT="bert-base-japanese-char"
 
 |[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
 |---------------|-----|-----|-----|
@@ -157,7 +157,7 @@ Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google
 |UniDic="kindai"|76.44|58.67|58.67|
 |UniDic="kinsei"|73.96|56.00|56.00|
 
-### nict-bert-base-japanese-100k
+### BERT="nict-bert-base-japanese-100k"
 
 |[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
 |---------------|-----|-----|-----|
@@ -177,7 +177,7 @@ Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google
 |UniDic="kindai"|73.30|48.65|48.65|
 |UniDic="kinsei"|71.88|50.67|50.67|
 
-### laboro-bert-japanese-large
+### BERT="laboro-bert-japanese-large"
 
 |[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
 |---------------|-----|-----|-----|
@@ -197,7 +197,7 @@ Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google
 |UniDic="kindai"|65.97|36.84|36.84|
 |UniDic="kinsei"|63.54|34.21|34.21|
 
-### unihanlm-base
+### BERT="unihanlm-base"
 
 |[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
 |---------------|-----|-----|-----|
@@ -217,7 +217,7 @@ Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google
 |UniDic="kindai"|61.78|36.36|38.96|
 |UniDic="kinsei"|60.42|36.36|38.96|
 
-### distilbert-base-japanese
+### BERT="distilbert-base-japanese"
 
 |[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
 |---------------|-----|-----|-----|
