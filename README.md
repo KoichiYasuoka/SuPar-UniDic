@@ -42,9 +42,9 @@ Tokenizer, POS-tagger, lemmatizer, and dependency-parser for modern and contempo
 た   AUX   <╝           aux(動詞補助成分)
 
 >>> from deplacy.deprelja import deprelja
->>> for b in spacy_syncha.bunsetu_spans(doc):
+>>> for b in suparunidic.bunsetu_spans(doc):
 ...   for t in b.lefts:
-...     print(spacy_syncha.bunsetu_span(t),"->",b,"("+deprelja[t.dep_]+")")
+...     print(suparunidic.bunsetu_span(t),"->",b,"("+deprelja[t.dep_]+")")
 ...
 花子が -> 読んでいる (主語)
 読んでいる -> 本を (連体修飾節)
