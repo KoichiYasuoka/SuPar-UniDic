@@ -31,7 +31,7 @@ class SuParAPI(object):
     c=conllu.split("\n")
     u=[]
     e=""
-    p=""
+    p="PUNCT"
     for s in c:
       if s.startswith("#"):
         continue
@@ -41,6 +41,7 @@ class SuParAPI(object):
             e+="。"
           u.append(e.strip().split())
           e=""
+          p="PUNCT"
       else:
         t=s.split("\t")
         e+=t[1]+" "
