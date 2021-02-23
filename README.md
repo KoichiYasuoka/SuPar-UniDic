@@ -75,7 +75,7 @@ Available `BERT` options are:
 * `BERT="electra-small-japanese-generator"` from [Cinnamon AI](https://huggingface.co/Cinnamon/electra-small-japanese-generator)
 * `BERT="ku-bert-japanese-large"` from [ku-bert-japanese](http://nlp.ist.i.kyoto-u.ac.jp/?ku_bert_japanese)
 * `BERT="laboro-bert-japanese-large"` from [Laboro AI](https://github.com/laboroai/Laboro-BERT-Japanese)
-* `BERT="nict-bert-base-japanese-100k"` from [NICT BERT 日本語 Pre-trained モデル](https://alaginrc.nict.go.jp/nict-bert/)
+* `BERT="nict-bert-base-japanese-100k"` from [NICT BERT](https://alaginrc.nict.go.jp/nict-bert/)
 * `BERT="albert-japanese-v2"` from [alinear-corp](https://github.com/alinear-corp/albert-japanese) ([SentencePiece](https://pypi.org/project/sentencepiece/) required)
 * `BERT="unihanlm-base"` from [microsoft/unihanlm-base](https://huggingface.co/microsoft/unihanlm-base)
 * `BERT="distilbert-base-japanese"` from [bandainamco-mirai](https://huggingface.co/bandainamco-mirai) ([SentencePiece](https://pypi.org/project/sentencepiece/) required)
