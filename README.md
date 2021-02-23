@@ -74,8 +74,9 @@ Available `BERT` options are:
 * `BERT="bert-base-japanese-char"` from [cl-tohoku](https://huggingface.co/cl-tohoku) ([fugashi](https://pypi.org/project/fugashi/), [ipadic](https://pypi.org/project/ipadic/) and [SentencePiece](https://pypi.org/project/sentencepiece/) required)
 * `BERT="electra-small-japanese-generator"` from [Cinnamon AI](https://huggingface.co/Cinnamon/electra-small-japanese-generator)
 * `BERT="ku-bert-japanese-large"` from [ku-bert-japanese](http://nlp.ist.i.kyoto-u.ac.jp/?ku_bert_japanese)
-* `BERT="laboro-bert-japanese-large"` from [Laboro-BERT-Japanese](https://github.com/laboroai/Laboro-BERT-Japanese)
+* `BERT="laboro-bert-japanese-large"` from [Laboro AI](https://github.com/laboroai/Laboro-BERT-Japanese)
 * `BERT="nict-bert-base-japanese-100k"` from [NICT BERT 日本語 Pre-trained モデル](https://alaginrc.nict.go.jp/nict-bert/)
+* `BERT="albert-japanese-v2"` from [alinear-corp](https://github.com/alinear-corp/albert-japanese) ([SentencePiece](https://pypi.org/project/sentencepiece/) required)
 * `BERT="unihanlm-base"` from [microsoft/unihanlm-base](https://huggingface.co/microsoft/unihanlm-base)
 * `BERT="distilbert-base-japanese"` from [bandainamco-mirai](https://huggingface.co/bandainamco-mirai) ([SentencePiece](https://pypi.org/project/sentencepiece/) required)
 
@@ -238,6 +239,26 @@ Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google
 |UniDic="qkana" |73.30|51.35|51.35|
 |UniDic="kindai"|73.30|48.65|48.65|
 |UniDic="kinsei"|71.88|50.67|50.67|
+
+### BERT="albert-japanese-v2"
+
+|[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |73.58|57.14|64.29|
+|UniDic="kindai"|73.58|57.14|64.29|
+|UniDic="kinsei"|64.81|51.72|55.17|
+
+|[雪國](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/yukiguni-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |76.79|73.08|69.23|
+|UniDic="kindai"|72.57|69.23|65.38|
+|UniDic="kinsei"|76.79|73.08|65.38|
+
+|[荒野より](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/koyayori-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |67.02|46.15|46.15|
+|UniDic="kindai"|67.02|43.59|43.59|
+|UniDic="kinsei"|64.58|41.03|41.03|
 
 ### BERT="unihanlm-base"
 
