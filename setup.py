@@ -18,7 +18,7 @@ setuptools.setup(
   install_requires=[
     "unidic2ud>=2.7.8",
     "spacy>=2.2.2",
-    "supar>=1.0.0",
+    "supar>=1.0.1a1",
     "unidic-lite>=1.0.8"
   ],
   python_requires=">=3.6",

@@ -83,7 +83,7 @@ Available `BERT` options are:
 ## Installation for Linux
 
 ```sh
-pip3 install suparunidic supar==1.0.1a1 --user
+pip3 install suparunidic --user
 ```
 
 ## Installation for Cygwin64
