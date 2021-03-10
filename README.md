@@ -83,7 +83,7 @@ Available `BERT` options are:
 ## Installation for Linux
 
 ```sh
-pip3 install git+https://github.com/yzhangcs/parser --user
+pip3 install git+https://github.com/KoichiYasuoka/SuPar --user
 pip3 install suparunidic --user
 ```
 
