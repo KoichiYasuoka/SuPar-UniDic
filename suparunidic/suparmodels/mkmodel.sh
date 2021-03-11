@@ -22,6 +22,7 @@ BEGIN{
 }' ja_gsd_modern.conllu
         case $M in
         bert-base-japanese-*) B=cl-tohoku/$M ;;
+        bert-large-japanese*) B=cl-tohoku/$M ;;
         distilbert-base-japanese) B=bandainamco-mirai/$M ;;
         electra-small-japanese-*) B=Cinnamon/$M ;;
         albert-japanese-v2) B=ALINEAR/$M ;;
