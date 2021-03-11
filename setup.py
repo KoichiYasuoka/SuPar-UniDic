@@ -5,7 +5,7 @@ URL="https://github.com/KoichiYasuoka/SuPar-UniDic"
 
 setuptools.setup(
   name="suparunidic",
-  version="0.7.4",
+  version="0.7.5",
   description="Tokenizer POS-tagger Lemmatizer and Dependency-parser for modern and contemporary Japanese with BERT models",
   long_description=long_description,
   long_description_content_type="text/markdown",
@@ -16,7 +16,7 @@ setuptools.setup(
   keywords="NLP Japanese spaCy",
   packages=setuptools.find_packages(),
   install_requires=[
-    "unidic2ud>=2.7.8",
+    "unidic2ud>=2.7.9",
     "spacy>=2.2.2",
     "supar>=1.0.1a1",
     "unidic-lite>=1.0.8"
