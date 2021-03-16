@@ -1,1 +1,1 @@
-bert-large-japanese-char.supar 1289256887
+bert-large-japanese-char.supar 1289257000
