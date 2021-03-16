@@ -165,9 +165,9 @@ Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google
 
 |[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
 |---------------|-----|-----|-----|
-|UniDic="qkana" |73.58|58.18|65.45|
-|UniDic="kindai"|73.58|58.18|65.45|
-|UniDic="kinsei"|62.96|49.12|52.63|
+|UniDic="qkana" |79.25|65.45|72.73|
+|UniDic="kindai"|79.25|65.45|72.73|
+|UniDic="kinsei"|68.52|56.14|59.65|
 
 |[雪國](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/yukiguni-benchmark.tar.gz)|LAS|MLAS|BLEX|
 |---------------|-----|-----|-----|
@@ -177,29 +177,29 @@ Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google
 
 |[荒野より](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/koyayori-benchmark.tar.gz)|LAS|MLAS|BLEX|
 |---------------|-----|-----|-----|
-|UniDic="qkana" |75.39|58.67|58.67|
-|UniDic="kindai"|75.39|56.00|56.00|
-|UniDic="kinsei"|72.92|53.33|53.33|
+|UniDic="qkana" |74.35|56.00|56.00|
+|UniDic="kindai"|74.35|53.33|53.33|
+|UniDic="kinsei"|71.88|50.67|50.67|
 
 ### BERT="bert-large-japanese-char"
 
 |[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
 |---------------|-----|-----|-----|
-|UniDic="qkana" |73.58|54.55|61.82|
-|UniDic="kindai"|73.58|54.55|61.82|
-|UniDic="kinsei"|62.96|45.61|49.12|
+|UniDic="qkana" |83.02|72.73|76.36|
+|UniDic="kindai"|83.02|72.73|76.36|
+|UniDic="kinsei"|70.37|59.65|63.16|
 
 |[雪國](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/yukiguni-benchmark.tar.gz)|LAS|MLAS|BLEX|
 |---------------|-----|-----|-----|
-|UniDic="qkana" |69.64|66.67|62.75|
-|UniDic="kindai"|72.57|68.00|64.00|
-|UniDic="kinsei"|69.64|66.67|58.82|
+|UniDic="qkana" |73.21|66.67|62.75|
+|UniDic="kindai"|69.03|62.75|58.82|
+|UniDic="kinsei"|73.21|66.67|58.82|
 
 |[荒野より](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/koyayori-benchmark.tar.gz)|LAS|MLAS|BLEX|
 |---------------|-----|-----|-----|
-|UniDic="qkana" |70.16|43.24|43.24|
-|UniDic="kindai"|70.16|40.54|40.54|
-|UniDic="kinsei"|67.71|37.84|37.84|
+|UniDic="qkana" |74.35|53.33|53.33|
+|UniDic="kindai"|74.35|50.67|50.67|
+|UniDic="kinsei"|71.88|48.00|48.00|
 
 ### BERT="electra-small-japanese-generator"
 
