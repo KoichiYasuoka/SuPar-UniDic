@@ -1,2 +1,2 @@
-bert-japanese-aozora6m3m-unidic32k-2m.supar 491349192
+bert-japanese-aozora6m3m-unidic32k-2m.supar 491349068
 pytorch_model.bin 445077099
