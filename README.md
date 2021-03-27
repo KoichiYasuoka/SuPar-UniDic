@@ -74,6 +74,7 @@ Available `BERT` options are:
 * `BERT="bert-base-japanese-whole-word-masking"` from [cl-tohoku](https://huggingface.co/cl-tohoku) ([fugashi](https://pypi.org/project/fugashi/), [ipadic](https://pypi.org/project/ipadic/) and [SentencePiece](https://pypi.org/project/sentencepiece/) required)
 * `BERT="bert-large-japanese"` from [cl-tohoku](https://huggingface.co/cl-tohoku) ([fugashi](https://pypi.org/project/fugashi/) and [SentencePiece](https://pypi.org/project/sentencepiece/) required)
 * `BERT="bert-large-japanese-char"` from [cl-tohoku](https://huggingface.co/cl-tohoku) ([fugashi](https://pypi.org/project/fugashi/) and [SentencePiece](https://pypi.org/project/sentencepiece/) required)
+* `BERT="electra-small-japanese-discriminator"` from [Cinnamon AI](https://huggingface.co/Cinnamon/electra-small-japanese-discriminator)
 * `BERT="electra-small-japanese-generator"` from [Cinnamon AI](https://huggingface.co/Cinnamon/electra-small-japanese-generator)
 * `BERT="ku-bert-japanese-large"` from [ku-bert-japanese](http://nlp.ist.i.kyoto-u.ac.jp/?ku_bert_japanese)
 * `BERT="laboro-bert-japanese-large"` from [Laboro AI](https://github.com/laboroai/Laboro-BERT-Japanese)
@@ -200,6 +201,26 @@ Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google
 |UniDic="qkana" |74.35|53.33|53.33|
 |UniDic="kindai"|74.35|50.67|50.67|
 |UniDic="kinsei"|71.88|48.00|48.00|
+
+### BERT="electra-small-japanese-discriminator"
+
+|[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |75.47|60.71|67.86|
+|UniDic="kindai"|75.47|60.71|67.86|
+|UniDic="kinsei"|66.67|55.17|58.62|
+
+|[雪國](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/yukiguni-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |73.21|69.23|65.38|
+|UniDic="kindai"|70.80|65.38|61.54|
+|UniDic="kinsei"|73.21|69.23|61.54|
+
+|[荒野より](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/koyayori-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |77.49|55.26|52.63|
+|UniDic="kindai"|77.49|55.26|52.63|
+|UniDic="kinsei"|75.00|52.63|50.00|
 
 ### BERT="electra-small-japanese-generator"
 
