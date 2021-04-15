@@ -46,7 +46,7 @@ class SuParAPI(object):
         t=s.split("\t")
         e+=t[1]+" "
         p=t[3]
-    d=self.supar.predict(u)
+    d=self.supar.predict(u,lang=None)
     i=j=0
     for k,s in enumerate(c):
       if s.startswith("#"):
