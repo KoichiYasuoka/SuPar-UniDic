@@ -1,2 +1,2 @@
-ku-bert-japanese-large.supar 1395757035
+ku-bert-japanese-large.supar 1395758293
 pytorch_model.bin 1351079634
