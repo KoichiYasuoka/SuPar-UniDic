@@ -5,7 +5,7 @@ URL="https://github.com/KoichiYasuoka/SuPar-UniDic"
 
 setuptools.setup(
   name="suparunidic",
-  version="0.8.8",
+  version="0.8.9",
   description="Tokenizer POS-tagger Lemmatizer and Dependency-parser for modern and contemporary Japanese with BERT models",
   long_description=long_description,
   long_description_content_type="text/markdown",
@@ -22,7 +22,7 @@ setuptools.setup(
     "transformers>=4.5.0",
     "unidic-lite>=1.0.8"
   ],
-  python_requires=">=3.6",
+  python_requires=">=3.7",
   package_data={"suparunidic":["suparmodels/*/*.txt","suparmodels/*/*.json"]},
   classifiers=[
     "License :: OSI Approved :: MIT License",
