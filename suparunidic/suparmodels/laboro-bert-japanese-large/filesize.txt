@@ -1,2 +1,2 @@
-laboro-bert-japanese-large.supar 1395821662
+laboro-bert-japanese-large.supar 1395822408
 pytorch_model.bin 1351128087
