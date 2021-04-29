@@ -1,2 +1,2 @@
-nict-bert-base-japanese-100k.supar 702158170
+nict-bert-base-japanese-100k.supar 702159532
 pytorch_model.bin 654237954
