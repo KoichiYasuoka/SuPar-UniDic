@@ -1,11 +1,11 @@
 #! /bin/sh
-# pip3 install torch==1.6.0+cu101 torchvision==0.7.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
-# pip3 install supar@git+https://github.com/yzhangcs/parser
+# pip3 install torch==1.7.1+cu101 torchvision==0.8.2+cu101 -f https://download.pytorch.org/whl/torch_stable.html
+# pip3 install supar==1.1.0
 if [ $# -eq 0 ]
 then set `echo *-*`
 fi
 for M
-do if [ -s $M/$M.supar ]
+do if [ -s $M.supar ]
    then continue
    elif [ -s ja_gsd_modern.conllu ]
    then nawk '
@@ -28,7 +28,7 @@ BEGIN{
         albert-japanese-v2) B=ALINEAR/$M ;;
         *) B=$M ;;
         esac
-        python3 -m supar.cmds.biaffine_dependency train -b -d 0 -p $M/$M.supar --epochs=1000 -f bert --bert $B --train train.conllu --dev dev.conllu --test test.conllu --embed=''
+        python3 -m supar.cmds.biaffine_dep train -b -d 0 -p $M/$M.supar -c biaffine-dep-en -f bert --bert $B --train train.conllu --dev dev.conllu --test test.conllu --embed=''
    fi
 done
 exit 0

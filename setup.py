@@ -16,9 +16,9 @@ setuptools.setup(
   keywords="NLP Japanese spaCy",
   packages=setuptools.find_packages(),
   install_requires=[
-    "unidic2ud>=2.8.3",
+    "unidic2ud>=2.8.4",
     "spacy>=2.2.2",
-    "supar>=1.0.1a1",
+    "supar>=1.1.0",
     "transformers>=4.5.0",
     "unidic-lite>=1.0.8"
   ],
