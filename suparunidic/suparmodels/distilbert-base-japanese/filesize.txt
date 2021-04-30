@@ -1,1 +1,1 @@
-distilbert-base-japanese.supar 318869015
+distilbert-base-japanese.supar 318870293
