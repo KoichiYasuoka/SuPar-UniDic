@@ -123,6 +123,26 @@ Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google
 |UniDic="kindai"|74.35|53.33|53.33|
 |UniDic="kinsei"|71.88|50.67|50.67|
 
+### BERT="bert-large-japanese-char-extended"
+
+|[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |75.47|64.29|71.43|
+|UniDic="kindai"|75.47|64.29|71.43|
+|UniDic="kinsei"|64.81|55.17|62.07|
+
+|[雪國](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/yukiguni-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |85.71|78.43|74.51|
+|UniDic="kindai"|81.42|74.51|70.59|
+|UniDic="kinsei"|85.71|78.43|70.59|
+
+|[荒野より](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/koyayori-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |78.53|64.00|64.00|
+|UniDic="kindai"|78.53|61.33|61.33|
+|UniDic="kinsei"|76.04|58.67|58.67|
+
 ### BERT="bert-base-japanese-char"
 
 |[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
