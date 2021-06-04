@@ -70,6 +70,7 @@ Tokenizer, POS-tagger, lemmatizer, and dependency-parser for modern and contempo
 Available `BERT` options are:
 
 * `BERT="bert-japanese-aozora6m3m-unidic32k-2m"` from [bert-japanese-aozora](https://github.com/akirakubo/bert-japanese-aozora) (default)
+* `BERT="bert-large-japanese-char-extended" from [bert-large-japanese-char-extended](https://huggingface.co/KoichiYasuoka/bert-large-japanese-char-extended)
 * `BERT="bert-base-japanese-char"` from [cl-tohoku](https://huggingface.co/cl-tohoku) ([fugashi](https://pypi.org/project/fugashi/) and [ipadic](https://pypi.org/project/ipadic/) required)
 * `BERT="bert-base-japanese-whole-word-masking"` from [cl-tohoku](https://huggingface.co/cl-tohoku) ([fugashi](https://pypi.org/project/fugashi/) and [ipadic](https://pypi.org/project/ipadic/) required)
 * `BERT="bert-large-japanese"` from [cl-tohoku](https://huggingface.co/cl-tohoku) ([fugashi](https://pypi.org/project/fugashi/) required)
