@@ -1,0 +1,1 @@
+bert-base-japanese-char-extended.supar 411866921
