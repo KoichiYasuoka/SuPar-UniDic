@@ -81,6 +81,7 @@ Available `BERT` options are:
 * `BERT="electra-small-japanese-discriminator"` from [Cinnamon AI](https://huggingface.co/Cinnamon)
 * `BERT="electra-small-japanese-generator"` from [Cinnamon AI](https://huggingface.co/Cinnamon)
 * `BERT="ku-bert-japanese-large"` from [ku-bert-japanese](http://nlp.ist.i.kyoto-u.ac.jp/?ku_bert_japanese)
+* `BERT="bert-base-ja-cased"` from [Geotrend](https://huggingface.co/Geotrend)
 * `BERT="laboro-bert-japanese-large"` from [Laboro AI](https://github.com/laboroai/Laboro-BERT-Japanese)
 * `BERT="nict-bert-base-japanese-100k"` from [NICT BERT](https://alaginrc.nict.go.jp/nict-bert/)
 * `BERT="unihanlm-base"` from [microsoft/unihanlm-base](https://huggingface.co/microsoft/unihanlm-base)
@@ -344,6 +345,26 @@ Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google
 |UniDic="qkana" |62.83|39.47|42.11|
 |UniDic="kindai"|62.83|36.84|39.47|
 |UniDic="kinsei"|62.50|38.96|41.56|
+
+### BERT="bert-base-ja-cased"
+
+|[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |73.58|58.18|65.45|
+|UniDic="kindai"|73.58|58.18|65.45|
+|UniDic="kinsei"|64.81|52.63|56.14|
+
+|[雪國](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/yukiguni-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |73.21|69.23|65.38|
+|UniDic="kindai"|70.80|65.38|61.54|
+|UniDic="kinsei"|73.21|69.23|61.54|
+
+|[荒野より](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/koyayori-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |63.87|41.56|44.16|
+|UniDic="kindai"|63.87|38.96|41.56|
+|UniDic="kinsei"|61.46|36.36|38.96|
 
 ### BERT="laboro-bert-japanese-large"
 
