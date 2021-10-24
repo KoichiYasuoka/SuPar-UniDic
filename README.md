@@ -78,6 +78,7 @@ Available `BERT` options are:
 * `BERT="bert-large-japanese-char"` from [cl-tohoku](https://huggingface.co/cl-tohoku) ([fugashi](https://pypi.org/project/fugashi/) required)
 * `BERT="albert-japanese-v2"` from [alinear-corp](https://github.com/alinear-corp/albert-japanese) ([SentencePiece](https://pypi.org/project/sentencepiece/) required)
 * `BERT="japanese-roberta-base"` from [rinna](https://huggingface.co/rinna) ([SentencePiece](https://pypi.org/project/sentencepiece/) required)
+* `BERT="bert-small-japanese"` from [izumi-lab](https://huggingface.co/izumi-lab) ([fugashi](https://pypi.org/project/fugashi/) and [ipadic](https://pypi.org/project/ipadic/) required)
 * `BERT="electra-small-japanese-discriminator"` from [Cinnamon AI](https://huggingface.co/Cinnamon)
 * `BERT="electra-small-japanese-generator"` from [Cinnamon AI](https://huggingface.co/Cinnamon)
 * `BERT="ku-bert-japanese-large"` from [ku-bert-japanese](http://nlp.ist.i.kyoto-u.ac.jp/?ku_bert_japanese)
@@ -285,6 +286,26 @@ Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google
 |UniDic="qkana" |74.35|50.00|47.37|
 |UniDic="kindai"|74.35|47.37|44.74|
 |UniDic="kinsei"|71.88|44.74|42.11|
+
+### BERT="bert-small-japanese"
+
+|[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |79.25|62.96|70.37|
+|UniDic="kindai"|79.25|62.96|70.37|
+|UniDic="kinsei"|70.37|57.14|60.71|
+
+|[雪國](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/yukiguni-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |76.79|73.08|69.23|
+|UniDic="kindai"|72.57|69.23|65.38|
+|UniDic="kinsei"|76.39|73.08|65.38|
+
+|[荒野より](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/koyayori-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |72.25|47.37|47.37|
+|UniDic="kindai"|72.25|47.37|47.37|
+|UniDic="kinsei"|69.79|42.67|45.33|
 
 ### BERT="electra-small-japanese-discriminator"
 
