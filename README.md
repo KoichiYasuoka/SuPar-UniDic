@@ -299,7 +299,7 @@ Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google
 |---------------|-----|-----|-----|
 |UniDic="qkana" |76.79|73.08|69.23|
 |UniDic="kindai"|72.57|69.23|65.38|
-|UniDic="kinsei"|76.39|73.08|65.38|
+|UniDic="kinsei"|76.79|73.08|65.38|
 
 |[荒野より](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/koyayori-benchmark.tar.gz)|LAS|MLAS|BLEX|
 |---------------|-----|-----|-----|
