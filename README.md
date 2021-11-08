@@ -56,15 +56,15 @@ Tokenizer, POS-tagger, lemmatizer, and dependency-parser for modern and contempo
 
 `suparunidic.load(UniDic,BERT)` loads a natural language processor pipeline, which uses `UniDic` for tokenizer POS-tagger and lemmatizer, then uses `BERT` for Biaffine dependency-parser of [SuPar](https://pypi.org/project/supar/). Available `UniDic` options are:
 
-* `UniDic="gendai"` [現代書き言葉UniDic](https://unidic.ninjal.ac.jp/download#unidic_bccwj)
-* `UniDic="spoken"` [現代話し言葉UniDic](https://unidic.ninjal.ac.jp/download#unidic_csj)
-* `UniDic="qkana"` [旧仮名口語UniDic](https://unidic.ninjal.ac.jp/download_all#unidic_qkana)
-* `UniDic="kindai"` [近代文語UniDic](https://unidic.ninjal.ac.jp/download_all#unidic_kindai)
-* `UniDic="kinsei"` [近世口語（洒落本）UniDic](https://unidic.ninjal.ac.jp/download_all#unidic_kinsei)
-* `UniDic="kyogen"` [中世口語（狂言）UniDic](https://unidic.ninjal.ac.jp/download_all#unidic_kyogen)
-* `UniDic="wakan"` [中世文語（説話・随筆）UniDic](https://unidic.ninjal.ac.jp/download_all#unidic_wakan)
-* `UniDic="wabun"` [中古和文UniDic](https://unidic.ninjal.ac.jp/download_all#unidic_wabun)
-* `UniDic="manyo"` [上代（万葉集）UniDic](https://unidic.ninjal.ac.jp/download_all#unidic_manyo)
+* `UniDic="gendai"` [現代書き言葉UniDic](https://ccd.ninjal.ac.jp/unidic/download#unidic_bccwj)
+* `UniDic="spoken"` [現代話し言葉UniDic](https://ccd.ninjal.ac.jp/unidic/download#unidic_csj)
+* `UniDic="qkana"` [旧仮名口語UniDic](https://ccd.ninjal.ac.jp/unidic/download_all#unidic_qkana)
+* `UniDic="kindai"` [近代文語UniDic](https://ccd.ninjal.ac.jp/unidic/download_all#unidic_kindai)
+* `UniDic="kinsei"` [近世口語（洒落本）UniDic](https://ccd.ninjal.ac.jp/unidic/download_all#unidic_kinsei)
+* `UniDic="kyogen"` [中世口語（狂言）UniDic](https://ccd.ninjal.ac.jp/unidic/download_all#unidic_kyogen)
+* `UniDic="wakan"` [中世文語（説話・随筆）UniDic](https://ccd.ninjal.ac.jp/unidic/download_all#unidic_wakan)
+* `UniDic="wabun"` [中古和文UniDic](https://ccd.ninjal.ac.jp/unidic/download_all#unidic_wabun)
+* `UniDic="manyo"` [上代（万葉集）UniDic](https://ccd.ninjal.ac.jp/unidic/download_all#unidic_manyo)
 * `UniDic=None` [unidic-lite](https://github.com/polm/unidic-lite) (default)
 
 Available `BERT` options are:
