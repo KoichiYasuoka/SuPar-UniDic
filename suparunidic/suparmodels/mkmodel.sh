@@ -34,6 +34,7 @@ BEGIN{
 	japanese-roberta-base) B=rinna/$M ;;
 	bert-base-ja-cased) B=Geotrend/$M ;;
 	bert-small-japanese|electra-base-japanese-*) B=izumi-lab/$M ;;
+	albert-base-japanese-v1) B=ken11/$M ;;
         *) B=$M ;;
         esac
         python3 -m supar.cmds.biaffine_dep train -b -d 0 -p $M/$M.supar -c biaffine-dep-en -f bert --bert $B --train train.conllu --dev dev.conllu --test test.conllu --embed=''
