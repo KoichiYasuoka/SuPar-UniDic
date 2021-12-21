@@ -25,7 +25,7 @@ BEGIN{
     i++;
 }' ja_gsd_modern.conllu
         case $M in
-        *-char-extended|roberta-small-*) B=KoichiYasuoka/$M ;;
+        *-char-extended|roberta-*) B=KoichiYasuoka/$M ;;
         bert-base-japanese-*) B=cl-tohoku/$M ;;
         bert-large-japanese*) B=cl-tohoku/$M ;;
         distilbert-base-japanese) B=bandainamco-mirai/$M ;;
