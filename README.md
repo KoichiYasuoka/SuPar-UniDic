@@ -80,8 +80,9 @@ Available `BERT` options are:
 * `BERT="electra-base-japanese-discriminator"` from [izumi-lab](https://huggingface.co/izumi-lab) ([fugashi](https://pypi.org/project/fugashi/) and [ipadic](https://pypi.org/project/ipadic/) required)
 * `BERT="bert-small-japanese"` from [izumi-lab](https://huggingface.co/izumi-lab) ([fugashi](https://pypi.org/project/fugashi/) and [ipadic](https://pypi.org/project/ipadic/) required)
 * `BERT="electra-base-japanese-generator"` from [izumi-lab](https://huggingface.co/izumi-lab) ([fugashi](https://pypi.org/project/fugashi/) and [ipadic](https://pypi.org/project/ipadic/) required)
-* `BERT="albert-japanese-v2"` from [alinear-corp](https://github.com/alinear-corp/albert-japanese) ([SentencePiece](https://pypi.org/project/sentencepiece/) required)
 * `BERT="japanese-roberta-base"` from [rinna](https://huggingface.co/rinna) ([SentencePiece](https://pypi.org/project/sentencepiece/) required)
+* `BERT="albert-japanese-v2"` from [alinear-corp](https://github.com/alinear-corp/albert-japanese) ([SentencePiece](https://pypi.org/project/sentencepiece/) required)
+* `BERT="albert-base-japanese-v1"` from [ken11](https://huggingface.co/ken11)
 * `BERT="electra-small-japanese-discriminator"` from [Cinnamon AI](https://huggingface.co/Cinnamon)
 * `BERT="electra-small-japanese-generator"` from [Cinnamon AI](https://huggingface.co/Cinnamon)
 * `BERT="ku-bert-japanese-large"` from [ku-bert-japanese](http://nlp.ist.i.kyoto-u.ac.jp/?ku_bert_japanese)
@@ -330,6 +331,26 @@ Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google
 |UniDic="kindai"|69.11|45.33|45.33|
 |UniDic="kinsei"|66.67|42.67|42.67|
 
+### BERT="japanese-roberta-base"
+
+|[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |73.58|57.14|64.29|
+|UniDic="kindai"|73.58|57.14|64.29|
+|UniDic="kinsei"|64.81|51.72|55.17|
+
+|[雪國](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/yukiguni-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |87.50|82.35|78.43|
+|UniDic="kindai"|83.19|78.43|74.51|
+|UniDic="kinsei"|87.50|82.35|74.51|
+
+|[荒野より](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/koyayori-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |74.35|50.00|47.37|
+|UniDic="kindai"|74.35|47.37|44.74|
+|UniDic="kinsei"|71.88|44.74|42.11|
+
 ### BERT="albert-japanese-v2"
 
 |[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
@@ -350,7 +371,7 @@ Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google
 |UniDic="kindai"|73.30|49.35|46.75|
 |UniDic="kinsei"|69.79|46.75|44.16|
 
-### BERT="japanese-roberta-base"
+### BERT="albert-base-japanese-v1"
 
 |[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
 |---------------|-----|-----|-----|
@@ -360,15 +381,15 @@ Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google
 
 |[雪國](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/yukiguni-benchmark.tar.gz)|LAS|MLAS|BLEX|
 |---------------|-----|-----|-----|
-|UniDic="qkana" |87.50|82.35|78.43|
-|UniDic="kindai"|83.19|78.43|74.51|
-|UniDic="kinsei"|87.50|82.35|74.51|
+|UniDic="qkana" |76.79|73.08|69.23|
+|UniDic="kindai"|74.34|69.23|65.38|
+|UniDic="kinsei"|76.79|73.08|65.38|
 
 |[荒野より](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/koyayori-benchmark.tar.gz)|LAS|MLAS|BLEX|
 |---------------|-----|-----|-----|
-|UniDic="qkana" |74.35|50.00|47.37|
-|UniDic="kindai"|74.35|47.37|44.74|
-|UniDic="kinsei"|71.88|44.74|42.11|
+|UniDic="qkana" |65.97|42.67|42.67|
+|UniDic="kindai"|65.97|40.00|40.00|
+|UniDic="kinsei"|64.58|39.47|39.47|
 
 ### BERT="electra-small-japanese-discriminator"
 
