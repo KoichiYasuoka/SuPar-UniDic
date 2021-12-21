@@ -70,6 +70,7 @@ Tokenizer, POS-tagger, lemmatizer, and dependency-parser for modern and contempo
 Available `BERT` options are:
 
 * `BERT="bert-japanese-aozora6m3m-unidic32k-2m"` from [bert-japanese-aozora](https://github.com/akirakubo/bert-japanese-aozora) (default)
+* `BERT="roberta-base-japanese-aozora"` from [roberta-base-japanese-aozora](https://huggingface.co/KoichiYasuoka/roberta-base-japanese-aozora)
 * `BERT="roberta-small-japanese-aozora"` from [roberta-small-japanese-aozora](https://huggingface.co/KoichiYasuoka/roberta-small-japanese-aozora)
 * `BERT="bert-base-japanese-char-extended"` from [bert-base-japanese-char-extended](https://huggingface.co/KoichiYasuoka/bert-base-japanese-char-extended)
 * `BERT="bert-large-japanese-char-extended"` from [bert-large-japanese-char-extended](https://huggingface.co/KoichiYasuoka/bert-large-japanese-char-extended)
@@ -130,6 +131,26 @@ Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google
 |UniDic="qkana" |74.35|56.00|56.00|
 |UniDic="kindai"|74.35|53.33|53.33|
 |UniDic="kinsei"|71.88|50.67|50.67|
+
+### BERT="roberta-base-japanese-aozora"
+
+|[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |79.25|65.45|72.73|
+|UniDic="kindai"|79.25|65.45|72.73|
+|UniDic="kinsei"|68.52|60.71|64.29|
+
+|[雪國](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/yukiguni-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |87.50|82.35|78.43|
+|UniDic="kindai"|83.19|78.43|74.51|
+|UniDic="kinsei"|87.50|82.35|74.51|
+
+|[荒野より](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/koyayori-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |76,44|58.67|61.33|
+|UniDic="kindai"|76.44|56.00|58.67|
+|UniDic="kinsei"|73.96|53.33|56.00|
 
 ### BERT="roberta-small-japanese-aozora"
 
