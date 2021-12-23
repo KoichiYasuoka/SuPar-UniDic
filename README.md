@@ -72,6 +72,7 @@ Available `BERT` options are:
 * `BERT="bert-japanese-aozora6m3m-unidic32k-2m"` from [bert-japanese-aozora](https://github.com/akirakubo/bert-japanese-aozora) (default)
 * `BERT="roberta-base-japanese-aozora"` from [roberta-base-japanese-aozora](https://huggingface.co/KoichiYasuoka/roberta-base-japanese-aozora)
 * `BERT="roberta-small-japanese-aozora"` from [roberta-small-japanese-aozora](https://huggingface.co/KoichiYasuoka/roberta-small-japanese-aozora)
+* `BERT="roberta-small-japanese-aozora-char"` from [roberta-small-japanese-aozora-char](https://huggingface.co/KoichiYasuoka/roberta-small-japanese-aozora-char)
 * `BERT="bert-base-japanese-char-extended"` from [bert-base-japanese-char-extended](https://huggingface.co/KoichiYasuoka/bert-base-japanese-char-extended)
 * `BERT="bert-large-japanese-char-extended"` from [bert-large-japanese-char-extended](https://huggingface.co/KoichiYasuoka/bert-large-japanese-char-extended)
 * `BERT="bert-base-japanese-char"` from [cl-tohoku](https://huggingface.co/cl-tohoku) ([fugashi](https://pypi.org/project/fugashi/) and [ipadic](https://pypi.org/project/ipadic/) required)
@@ -171,6 +172,26 @@ Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google
 |UniDic="qkana" |74.35|56.00|56.00|
 |UniDic="kindai"|74.35|53.33|53.33|
 |UniDic="kinsei"|71.88|50.67|50.67|
+
+### BERT="roberta-small-japanese-aozora-char"
+
+|[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |77.36|65.45|72.73|
+|UniDic="kindai"|77.36|65.45|72.73|
+|UniDic="kinsei"|70.37|59.65|63.16|
+
+|[雪國](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/yukiguni-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |85.71|78.43|74.51|
+|UniDic="kindai"|81.42|74.51|70.59|
+|UniDic="kinsei"|85.71|78.43|70.59|
+
+|[荒野より](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/koyayori-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |73.30|53.33|53.33|
+|UniDic="kindai"|73.30|50.67|50.67|
+|UniDic="kinsei"|70.83|48.00|48.00|
 
 ### BERT="bert-base-japanese-char-extended"
 
