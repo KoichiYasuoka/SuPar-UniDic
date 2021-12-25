@@ -79,6 +79,7 @@ Available `BERT` options are:
 * `BERT="bert-base-japanese-whole-word-masking"` from [cl-tohoku](https://huggingface.co/cl-tohoku) ([fugashi](https://pypi.org/project/fugashi/) and [ipadic](https://pypi.org/project/ipadic/) required)
 * `BERT="bert-large-japanese"` from [cl-tohoku](https://huggingface.co/cl-tohoku) ([fugashi](https://pypi.org/project/fugashi/) required)
 * `BERT="bert-large-japanese-char"` from [cl-tohoku](https://huggingface.co/cl-tohoku) ([fugashi](https://pypi.org/project/fugashi/) required)
+* `BERT="roberta-base-japanese"` from [nlp-waseda](https://huggingface.co/nlp-waseda) ([SentencePiece](https://pypi.org/project/sentencepiece/) required)
 * `BERT="electra-base-japanese-discriminator"` from [izumi-lab](https://huggingface.co/izumi-lab) ([fugashi](https://pypi.org/project/fugashi/) and [ipadic](https://pypi.org/project/ipadic/) required)
 * `BERT="bert-small-japanese"` from [izumi-lab](https://huggingface.co/izumi-lab) ([fugashi](https://pypi.org/project/fugashi/) and [ipadic](https://pypi.org/project/ipadic/) required)
 * `BERT="electra-base-japanese-generator"` from [izumi-lab](https://huggingface.co/izumi-lab) ([fugashi](https://pypi.org/project/fugashi/) and [ipadic](https://pypi.org/project/ipadic/) required)
@@ -312,6 +313,26 @@ Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google
 |UniDic="qkana" |74.35|53.33|53.33|
 |UniDic="kindai"|74.35|50.67|50.67|
 |UniDic="kinsei"|71.88|48.00|48.00|
+
+### BERT="roberta-base-japanese"
+
+|[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |83.02|72.73|76.36|
+|UniDic="kindai"|83.02|72.73|76.36|
+|UniDic="kinsei"|72.22|63.16|66.67|
+
+|[雪國](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/yukiguni-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |85.71|78.43|74.51|
+|UniDic="kindai"|83.19|78.43|74.51|
+|UniDic="kinsei"|85.71|78.43|70.59|
+
+|[荒野より](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/koyayori-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |72.25|51.35|51.35|
+|UniDic="kindai"|72.25|51.35|51.35|
+|UniDic="kinsei"|69.79|48.65|48.65|
 
 ### BERT="electra-base-japanese-discriminator"
 
