@@ -25,9 +25,8 @@ BEGIN{
     i++;
 }' ja_gsd_modern.conllu
         case $M in
-        *-char-extended|roberta-*) B=KoichiYasuoka/$M ;;
-        bert-base-japanese-*) B=cl-tohoku/$M ;;
-        bert-large-japanese*) B=cl-tohoku/$M ;;
+        *-char-extended|roberta-*-aozora*) B=KoichiYasuoka/$M ;;
+        bert-base-japanese-*|bert-large-japanese*) B=cl-tohoku/$M ;;
         distilbert-base-japanese) B=bandainamco-mirai/$M ;;
         electra-small-japanese-*) B=Cinnamon/$M ;;
         albert-japanese-v2) B=ALINEAR/$M ;;
@@ -35,6 +34,7 @@ BEGIN{
 	bert-base-ja-cased) B=Geotrend/$M ;;
 	bert-small-japanese|electra-base-japanese-*) B=izumi-lab/$M ;;
 	albert-base-japanese-v1) B=ken11/$M ;;
+	roberta-base-japanese) B=nlp-waseda/$M ;;
         *) B=$M ;;
         esac
         python3 -m supar.cmds.biaffine_dep train -b -d 0 -p $M/$M.supar -c biaffine-dep-en -f bert --bert $B --train train.conllu --dev dev.conllu --test test.conllu --embed=''
