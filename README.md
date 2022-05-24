@@ -83,6 +83,7 @@ Available `BERT` options are:
 * `BERT="bert-large-japanese"` from [cl-tohoku](https://huggingface.co/cl-tohoku) ([fugashi](https://pypi.org/project/fugashi/) required)
 * `BERT="bert-large-japanese-char"` from [cl-tohoku](https://huggingface.co/cl-tohoku) ([fugashi](https://pypi.org/project/fugashi/) required)
 * `BERT="roberta-base-japanese"` from [nlp-waseda](https://huggingface.co/nlp-waseda) ([SentencePiece](https://pypi.org/project/sentencepiece/) required)
+* `BERT="roberta-large-japanese"` from [nlp-waseda](https://huggingface.co/nlp-waseda) ([SentencePiece](https://pypi.org/project/sentencepiece/) required)
 * `BERT="electra-base-japanese-discriminator"` from [izumi-lab](https://huggingface.co/izumi-lab) ([fugashi](https://pypi.org/project/fugashi/) and [ipadic](https://pypi.org/project/ipadic/) required)
 * `BERT="bert-small-japanese"` from [izumi-lab](https://huggingface.co/izumi-lab) ([fugashi](https://pypi.org/project/fugashi/) and [ipadic](https://pypi.org/project/ipadic/) required)
 * `BERT="electra-base-japanese-generator"` from [izumi-lab](https://huggingface.co/izumi-lab) ([fugashi](https://pypi.org/project/fugashi/) and [ipadic](https://pypi.org/project/ipadic/) required)
@@ -396,6 +397,26 @@ Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google
 |UniDic="qkana" |72.25|51.35|51.35|
 |UniDic="kindai"|72.25|51.35|51.35|
 |UniDic="kinsei"|69.79|48.65|48.65|
+
+### BERT="roberta-large-japanese"
+
+|[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |79.25|65.45|69.09|
+|UniDic="kindai"|69.16|60.71|57.14|
+|UniDic="kinsei"|73.58|50.00|53.57|
+
+|[雪國](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/yukiguni-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |85.71|78.43|74.51|
+|UniDic="kindai"|81.42|74.51|66.67|
+|UniDic="kinsei"|78.95|67.92|64.15|
+
+|[荒野より](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/koyayori-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |72.25|57.89|57.89|
+|UniDic="kindai"|72.25|55.26|55.26|
+|UniDic="kinsei"|68.75|51.95|49.35|
 
 ### BERT="electra-base-japanese-discriminator"
 
