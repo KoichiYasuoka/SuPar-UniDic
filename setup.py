@@ -19,7 +19,7 @@ setuptools.setup(
     "unidic2ud>=2.9.4",
     "spacy>=2.2.2",
     "supar>=1.1.4",
-    "transformers>=4.10.0",
+    "transformers>=4.19.0",
     "unidic-lite>=1.0.8"
   ],
   python_requires=">=3.7",
