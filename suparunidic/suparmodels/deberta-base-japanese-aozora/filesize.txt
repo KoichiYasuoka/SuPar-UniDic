@@ -1,0 +1,1 @@
+deberta-base-japanese-aozora.supar 489018124
