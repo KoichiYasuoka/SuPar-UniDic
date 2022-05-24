@@ -76,6 +76,7 @@ Available `BERT` options are:
 * `BERT="roberta-base-japanese-aozora-char"` from [roberta-base-japanese-aozora-char](https://huggingface.co/KoichiYasuoka/roberta-base-japanese-aozora-char)
 * `BERT="roberta-small-japanese-aozora"` from [roberta-small-japanese-aozora](https://huggingface.co/KoichiYasuoka/roberta-small-japanese-aozora)
 * `BERT="roberta-small-japanese-aozora-char"` from [roberta-small-japanese-aozora-char](https://huggingface.co/KoichiYasuoka/roberta-small-japanese-aozora-char)
+* `BERT="deberta-base-japanese-aozora"` from [deberta-base-japanese-aozora](https://huggingface.co/KoichiYasuoka/deberta-base-japanese-aozora)
 * `BERT="deberta-small-japanese-aozora"` from [deberta-small-japanese-aozora](https://huggingface.co/KoichiYasuoka/deberta-small-japanese-aozora)
 * `BERT="bert-base-japanese-char-extended"` from [bert-base-japanese-char-extended](https://huggingface.co/KoichiYasuoka/bert-base-japanese-char-extended)
 * `BERT="bert-large-japanese-char-extended"` from [bert-large-japanese-char-extended](https://huggingface.co/KoichiYasuoka/bert-large-japanese-char-extended)
@@ -258,6 +259,26 @@ Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google
 |UniDic="qkana" |73.30|53.33|53.33|
 |UniDic="kindai"|73.30|50.67|50.67|
 |UniDic="kinsei"|70.83|48.00|48.00|
+
+### BERT="deberta-base-japanese-aozora"
+
+|[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |86.79|77.78|77.78|
+|UniDic="kindai"|76.64|72.73|69.09|
+|UniDic="kinsei"|81.13|65.45|65.45|
+
+|[雪國](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/yukiguni-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |85.71|78.43|74.51|
+|UniDic="kindai"|83.19|78.43|70.59|
+|UniDic="kinsei"|78.95|67.92|64.15|
+
+|[荒野より](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/koyayori-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |72.25|53.33|53.33|
+|UniDic="kindai"|72.25|50.67|50.67|
+|UniDic="kinsei"|69.79|50.00|47.37|
 
 ### BERT="deberta-small-japanese-aozora"
 
