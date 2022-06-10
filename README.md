@@ -79,6 +79,7 @@ Available `BERT` options are:
 * `BERT="deberta-large-japanese-aozora"` from [deberta-large-japanese-aozora](https://huggingface.co/KoichiYasuoka/deberta-base-japanese-aozora)
 * `BERT="deberta-base-japanese-aozora"` from [deberta-base-japanese-aozora](https://huggingface.co/KoichiYasuoka/deberta-base-japanese-aozora)
 * `BERT="deberta-small-japanese-aozora"` from [deberta-small-japanese-aozora](https://huggingface.co/KoichiYasuoka/deberta-small-japanese-aozora)
+* `BERT="deberta-base-japanese-unidic"` from [deberta-base-japanese-aozora](https://huggingface.co/KoichiYasuoka/deberta-base-japanese-unidic) ([fugashi](https://pypi.org/project/fugashi/) required)
 * `BERT="bert-base-japanese-char-extended"` from [bert-base-japanese-char-extended](https://huggingface.co/KoichiYasuoka/bert-base-japanese-char-extended)
 * `BERT="bert-large-japanese-char-extended"` from [bert-large-japanese-char-extended](https://huggingface.co/KoichiYasuoka/bert-large-japanese-char-extended)
 * `BERT="bert-base-japanese-char"` from [cl-tohoku](https://huggingface.co/cl-tohoku) ([fugashi](https://pypi.org/project/fugashi/) and [ipadic](https://pypi.org/project/ipadic/) required)
@@ -320,6 +321,26 @@ Results of [舞姬/雪國/荒野より-Benchmarks](https://colab.research.google
 |UniDic="qkana" |75.39|56.00|56.00|
 |UniDic="kindai"|75.39|56.00|56.00|
 |UniDic="kinsei"|71.88|52.63|50.00|
+
+### BERT="deberta-base-japanese-unidic"
+
+|[舞姬](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/maihime-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |86.79|77.78|77.78|
+|UniDic="kindai"|76.64|72.73|69.09|
+|UniDic="kinsei"|79.25|60.71|60.71|
+
+|[雪國](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/yukiguni-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |83.93|76.00|72.00|
+|UniDic="kindai"|79.65|72.00|64.00|
+|UniDic="kinsei"|77.19|65.38|61.54|
+
+|[荒野より](https://github.com/KoichiYasuoka/UniDic2UD/blob/master/benchmark/koyayori-benchmark.tar.gz)|LAS|MLAS|BLEX|
+|---------------|-----|-----|-----|
+|UniDic="qkana" |77.49|61.33|61.33|
+|UniDic="kindai"|77.49|58.67|58.67|
+|UniDic="kinsei"|73.96|55.26|52.63|
 
 ### BERT="bert-base-japanese-char-extended"
 
