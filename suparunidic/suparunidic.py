@@ -8,7 +8,7 @@ MODEL_URL="https://raw.githubusercontent.com/KoichiYasuoka/SuPar-UniDic/main/sup
 
 class SuParAPI(object):
   def __init__(self,model):
-    from supar import Parser
+    from esupar.supar import Parser
     d=os.path.join(DOWNLOAD_DIR,model)
     with open(os.path.join(d,"filesize.txt"),"r") as f:
       r=f.read()
